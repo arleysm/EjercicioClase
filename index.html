@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugando con Números</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid red;
+            padding: 10px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .number {
+            font-size: 40px;
+        }
+    </style>
+
+    <h1>Jugando con Números</h1>
+    
+    <div id="arley">
+        <div class="buttons">
+            <button v-on:click="decrementar">DECREMENTAR</button>
+            <span class="number">{{ numeroInicial }}</span>
+            <button v-on:click="incrementar">INCREMENTAR</button>
+        </div>
+
+        <table>
+            <tr>
+                <th>BINARIO</th>
+                <th>VALOR</th>
+            </tr>
+            <tr>
+                <td>{{ valorBinario }}</td>
+                <td>{{ valueText }}</td>
+            </tr>
+        </table>
+        
+                <TD></TD>
+            </TR>
+
+        </table>
+
+                
+            
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
